@@ -1,0 +1,37 @@
+<template>
+  <view class="container">
+  </view>
+</template>
+<script>
+  import wepy from 'wepy'
+
+  export default class ${NAME} extends wepy.page {
+    config = {
+        navigationBarTitleText: ${NAME}
+    }
+    
+
+    mixins = []
+
+    components = {}
+
+    data = {}
+
+    computed = {}
+
+    onLoad() {
+    }
+
+    onShow() {
+    }
+
+    methods = {}
+
+    events = {}
+
+    watch = {}
+
+  }
+</script>
+<style lang="scss">
+</style>

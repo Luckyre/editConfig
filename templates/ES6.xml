@@ -1,0 +1,20 @@
+<templateSet group="ES6">
+  <template name="sto" value="setTimeout(()=&gt;{&#10;  $END$&#10;},$TIME$)" description="定时器" toReformat="false" toShortenFQNames="true">
+    <variable name="TIME" expression="" defaultValue="&quot;1000&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="anfn" value="($params$) =&gt; {&#10;  $END$&#10;}" description="匿名箭头函数" toReformat="false" toShortenFQNames="true">
+    <variable name="params" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="sti" value="setInterval(()=&gt;{&#10;  $END$&#10;},$TIME$)" description="定时器" toReformat="false" toShortenFQNames="true">
+    <variable name="TIME" expression="" defaultValue="&quot;1000&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>

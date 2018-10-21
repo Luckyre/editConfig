@@ -1,0 +1,65 @@
+<templateSet group="JavaScript">
+  <template name="clg" value="console.log($PARAMS$);" description="控制台输出" toReformat="false" toShortenFQNames="true">
+    <variable name="PARAMS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="Vue" value=" var vm  = new Vue({&#10;    el:&quot;$EL$&quot;,&#10;    data:function () {&#10;      return {&#10;        &#10;      }&#10;    },&#10;    created:function () {&#10;      &#10;    },&#10;    mounted:function () {&#10;      &#10;    },&#10;    computed:{&#10;      &#10;    },&#10;    methods: {&#10;      &#10;    },&#10;    &#10;    watch:{&#10;      &#10;    }&#10;  })" description="Vue实例化" toReformat="false" toShortenFQNames="true">
+    <variable name="EL" expression="" defaultValue="&quot;#vue&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="tryc" value="try {&#10;  $EXPRESS$&#10;} catch (e) {&#10;  $END$&#10;}" description="捕获错误" toReformat="false" toShortenFQNames="true">
+    <variable name="EXPRESS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="res" value="if (res.code === 200) {&#10;    $EXPRESS$&#10;}" description="接口判断" toReformat="false" toShortenFQNames="true">
+    <variable name="EXPRESS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="fct" value="/** &#10; * $desc$&#10; * @file: $name$&#10; * @author: LiuZiHao/ltinyho@gmail.com&#10; * Date: $date$ $TIME$&#10; */&#10;" description="文件注释" toReformat="false" toShortenFQNames="true">
+    <variable name="desc" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="name" expression="fileName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="date" expression="date()" defaultValue="" alwaysStopAt="true" />
+    <variable name="TIME" expression="time()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="xhr" value="return xhr({&#10;  url: `$URL$`,&#10;  params: {}&#10;});" description="分装xhr函数" toReformat="false" toShortenFQNames="true">
+    <variable name="URL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="itar" value="for (let $INDEX$ = 0, len = $ARRAY$.length; $INDEX$ &lt; len; $INDEX$++) {&#10;  let $VAR$ = $ARRAY$[$INDEX$];&#10;  $END$&#10;}" description="Iterate elements of array" toReformat="true" toShortenFQNames="true">
+    <variable name="INDEX" expression="jsSuggestIndexName()" defaultValue="&quot;i&quot;" alwaysStopAt="true" />
+    <variable name="ARRAY" expression="jsArrayVariable()" defaultValue="&quot;array&quot;" alwaysStopAt="true" />
+    <variable name="VAR" expression="jsSuggestVariableName()" defaultValue="&quot;o&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="resa" value="(res) =&gt; {&#10;  if (res.code === 200) {&#10;    $END$&#10;  }&#10;}" description="接口判断箭头函数" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="xhrp" value="return xhr({&#10;  method: 'post',&#10;  url: `$URL$`,&#10;  data: {}&#10;});" description="xhr post" toReformat="false" toShortenFQNames="true">
+    <variable name="URL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+</templateSet>

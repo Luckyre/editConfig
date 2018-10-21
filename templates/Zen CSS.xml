@@ -1,0 +1,3 @@
+<templateSet group="Zen CSS">
+  <template name="pt" value="padding-top: $END$;" description="padding-top:...;" toReformat="true" toShortenFQNames="true" />
+</templateSet>

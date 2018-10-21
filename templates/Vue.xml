@@ -1,0 +1,7 @@
+<templateSet group="Vue">
+  <template name="vuex" value="import {mapState,mapMutations,mapActions,mapGetters} from 'vuex'" description="导入vuex" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="VUE_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>
